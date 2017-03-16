@@ -11,10 +11,12 @@
     "babel-preset-es2015": "^6.24.0",
     "babel-preset-latest": "^6.24.0",
     "chai": "^3.5.0",
+    "jsdom": "9.12.0",
+    "jsdom-global": "2.1.1",
     "mocha": "^3.2.0"
   },
   "scripts": {
-    "test": "NODE_ENV=test mocha src/index.test.js --compilers js:babel-register"
+    "test": "NODE_ENV=test mocha src/index.test.js --compilers js:babel-register --require jsdom-global/register"
   },
   "repository": {
     "type": "git",
